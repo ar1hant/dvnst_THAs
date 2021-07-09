@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+  margin: 0;
+  font-size: 16px;
+  background-color: #009688;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+span{
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.custom_box{
+  max-width: 700px;
+  background-color: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  animation: fadeinTop 1s ease;
+}
+
+@keyframes fadeinTop{
+  0%{
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.custom_box::before,
+.custom_box::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.custom_box.hide{
+  display: none;
+}
+
+.main_box h3{
+  font-size: 18px;
+  color: #009688;
+  font-weight:  500;
+  margin-bottom: 15px;
+  line-height: 25px; 
+}
+
+.main_box p{
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 22px;
+  color: #009688;
+  font-weight: 400;
+}
+
+.main_box p span{
+  font-weight: 500;
+}
+
+.main_box .btn{
+  margin-top: 20px;
+}
+
+.btn{
+  padding: 15px 45px;
+  background-color: #008688;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.quiz_box .ques_no,
+.quiz_box .ques_text,
+.quiz_box .option_container,
+.quiz_box .ans_indicator,
+.quiz_box .next_btn{
+  width : 100%;
+  float: left;
+}
+
+.quiz_box .ques_no{
+  font-size: 18px;
+  color: #009688;
+  font-weight: 600;
+  border: 1px solid #cccccc;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+ 
+.quiz_box .ques_text{
+  font-size: 22px;
+  color: #009688;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.quiz_box .option_container .option{
+  background-color: #cccccc;
+  padding: 13px 15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #009688;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.quiz_box .option_container .option.correct::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  z-index: -1;
+  animation: slideInLeft .7s ease forwards;
+}
+
+.quiz_box .option_container .option.wrong::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 31, 31);
+  z-index: -1;
+  animation: slideInLeft .7s ease forwards;
+}
+
+.quiz_box .option_container .option.correct,
+.quiz_box .option_container .option.wrong{
+  color: #ffffff;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.quiz_box .option_container .option.already_answered{
+  pointer-events: none;
+}
+
+.quiz_box .btn{
+  margin: 15px 0;
+}
+
+.quiz_box .ans_indicator{
+  border-top: 1px solid #cccccc;
+}
+
+.quiz_box .ans_indicator div{ 
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: #cccccc;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-top: 15px;
+}
+
+.quiz_box .ans_indicator div.correct{
+  background-color: green;
+}
+
+.quiz_box .ans_indicator div.wrong {
+  background-color: red;
+}
+
+.result_box{
+  text-align: center;
+}
+
+.result_box .hide{
+  display: none;
+}
+
+.result_box h1{
+  font-size: 36px;
+  line-height: 42px;
+  color: #009688;
+}
+
+.result_box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+
+.result_box table td{
+  border: 1px solid #cccccc;
+  padding: 8px 15px;
+  font-weight: 500;
+  color: #009688;
+  width: 50%;
+  text-align: left;
+  font-size: 18px;
+}
+
+.result_box .btn {
+  margin-right: 20px;
+}
+
+@media(max-width: 767px){
+  body{
+    padding: 15px;
+  }
+
+  .result_box .btn{
+    margin-bottom: 15px;
+  }
+}

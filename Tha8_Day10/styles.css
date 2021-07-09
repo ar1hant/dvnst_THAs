@@ -1,0 +1,64 @@
+.row{
+  text-align: center;
+}
+
+.col{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
+
+.col:hover{
+ box-shadow: inset 0px 0px 0px 1px black;
+ box-sizing: border-box;
+}
+
+.col.done{
+  cursor: default;
+}
+
+.col.done:hover{
+  cursor: default;
+  box-shadow: none;
+}
+
+.img1{
+  background-color: red;
+}
+
+.img2 {
+  background-color: blue;
+}
+
+.img3 {
+  background-color: yellow;
+}
+
+.img4 {
+  background-color: lightcoral;
+}
+
+.img5 {
+  background-color: green;
+}
+
+.img6 {
+  background-color: orange;
+}
+
+.img7 {
+  background-color: cyan;
+}
+
+.img8 {
+  background-color: darkviolet;
+}
+
+.color-hidden{
+  background-color: grey;
+}
+
+#finished{
+  visibility: hidden;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class = "main_box custom_box">
+      <h3> Instructions:</h3>
+      <p>Total no. of questions : <span class = "total_ques"></span></p>
+      <button type = "button" class = "btn" onclick = "startquiz()">Start Quiz</button>
+    </div>
+
+    <div class = "quiz_box custom_box hide">
+      <div class = "ques_no">
+        
+      </div>
+      <div class = "ques_text">
+        
+      </div>
+      <div class = "option_container">
+        
+      </div>
+      <div class = "next_btn">
+        <button type="button" class = "btn" onclick = "next()">Next</button>
+      </div>
+      <div class = "ans_indicator">
+        
+      </div>
+    </div>
+
+    <div class = "result_box custom_box hide">
+      <h1>Quiz Result</h1>
+      <table>
+        <tr>
+          <td>Total Questions</td>
+          <td><span class = "total_ques"></span></td>
+        </tr>
+        <tr>
+          <td>Attempt</td>
+          <td><span class = "total_attempt"></span></td>
+        </tr>
+        <tr>
+          <td>Correct</td>
+          <td><span class = "total_corr"></span></td>
+        </tr>
+        <tr>
+          <td>Wrong</td>
+          <td><span class = "total_wrong"></span></td>
+        </tr>
+        <tr>
+          <td>Percentage</td>
+          <td><span class = "total_percent"></span></td>
+        </tr>
+        <tr>
+          <td>Your Total Score</td>
+          <td><span class = "total_score"></span></td>
+        </tr>
+      </table>
+      <button type = "button" class = "btn" onclick = "tryagainquiz()">Try Again</button>
+      <button type = "button" class = "btn" onclick = "backtohome()">Go To Home</button>
+    </div>
+    <script src="index.js" async defer></script>
+  </body>
+</html>

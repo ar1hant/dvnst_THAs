@@ -1,0 +1,16 @@
+body{
+ background-color: rgb(196, 196, 196);
+}
+
+h2{
+  margin-bottom: 18px;
+}
+
+.break{
+  height: 10px;
+}
+
+.para{
+  margin: 10px auto 0;
+ font-family: "Ubuntu";
+}

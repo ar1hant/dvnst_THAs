@@ -1,0 +1,54 @@
+body{
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.design{
+  background-color:rgb(66, 7, 7);
+  height: 15px;
+  width: 400px;
+  margin: auto;
+  margin-top: 0;
+  border-radius: 15px 15px 3px 3px;
+}
+
+.text_table{
+  margin: 2% auto;
+}
+
+.numbers{
+  text-align: left;
+}
+
+.spacing{
+  word-spacing: 8.3rem;
+}
+
+.box{
+  height: 90px;
+  width: 220px;
+  margin: 5px 0 0 5px;
+  background-color: #944839;
+}
+
+.box:hover{
+  background-color: #975548;
+}
+
+.box_clkd{
+  height: 90px;
+  width: 220px;
+  margin: 5px 0 0 5px;
+  background-color:rgb(66, 7, 7);
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 1355px;
+  height: 575px;
+  margin: auto;
+  background-color: rgb(211, 115, 108);
+}
