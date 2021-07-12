@@ -12,9 +12,9 @@ const Card = (props) => {
 
 function App() {
   return(
-    <div class="app">
+    <div className="app">
       <h1>Instructions</h1>
-      <div class="heading">
+      <div className="heading">
         <ul>
           <li>Build a container</li>
           <li>Create a seperate function and use it as a component</li>
@@ -22,7 +22,7 @@ function App() {
         </ul>
       </div>
       <h1>Calorie Read Only</h1>
-      <div class="box">
+      <div className="box">
         <div className="content">
           <Card title="Pizza" cals="56" />
           <Card title="Burger" cals="69" />
