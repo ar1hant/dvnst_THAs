@@ -1,0 +1,68 @@
+input {
+  margin: 7px;
+  width: 175px;
+  height: 27px;
+}
+
+.App {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 380px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 0.5px solid lightgrey;
+  border-radius: 5px;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+  height: 140px;
+  width: 630px;
+  display: block;
+  margin: 5px;
+}
+
+.BTN {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.del_btn {
+  background-color: red;
+  color: #fff;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.save_btn {
+  background-color: #0d6efd;
+  color: #fff;
+}
