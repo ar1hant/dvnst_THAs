@@ -1,0 +1,42 @@
+.App {
+  
+  text-align: center;
+}
+
+.App button {
+  padding: 20px;
+  margin: 10px auto;
+  background-color: cyan;
+  border: none;
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+a{
+  display: block;
+}
+
+.links{
+  height: 250px;
+  width: 500px;
+  display: inline-block;
+  margin: auto;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.canHoverClass{
+  opacity: 1;
+  font-size: 2rem;
+  border: 2px solid green;
+  width: 150px;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.canHoverClass:hover{
+  opacity: 0;
+}
