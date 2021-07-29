@@ -1,0 +1,17 @@
+.App{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input{
+  display: inline-block;
+  width: 250px;
+  height: 25px;
+  margin: 10px;
+}
+
+h4{
+  margin: 4px;
+  font-size: 1.15rem;
+}
