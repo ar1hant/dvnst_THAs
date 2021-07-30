@@ -1,0 +1,33 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+input, button{
+  padding: 4px 10px 2px;
+  margin: 10px;
+}
+
+h2{
+  display: inline-block;
+}
+
+.container{
+  overflow: scroll;
+  height: 400px;
+  width: 400px;
+  border: 3px solid black;
+}
+
+.element{
+  height: 90px;
+  width: 363px;
+  margin: 4px 10px 2px;
+  border: 1.5px solid black;
+}
+
+.Green{
+  color: green;
+}
